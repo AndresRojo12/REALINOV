@@ -21,6 +21,7 @@ html, body, #root {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .under-development-page {
@@ -29,7 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 20px 90px;
+  padding: 32px 20px 180px;
   position: relative;
 }
 
@@ -171,17 +172,65 @@ body {
 }
 
 @media (max-width: 640px) {
+  .under-development-page {
+    padding: 18px 12px 220px;
+  }
+
   .content-shell {
-    padding: 30px 18px 22px;
+    padding: 28px 16px 20px;
+    border-radius: 18px;
+  }
+
+  .hero-image {
+    width: min(170px, 52vw);
+    margin-bottom: 12px;
+  }
+
+  .title {
+    font-size: clamp(1.7rem, 7vw, 2.4rem);
+    letter-spacing: 0.06em;
+  }
+
+  .tagline,
+  .subtitle {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .whatsapp-float {
+    right: 18px;
+    bottom: 18px;
+    width: 56px;
+    height: 56px;
+    font-size: 1.7rem;
   }
 
   .site-footer {
-    padding-bottom: 14px;
+    padding: 12px 14px 14px;
+    gap: 6px;
   }
 
   .footer-brand-row,
   .footer-contact {
     flex-direction: column;
     gap: 8px;
+    text-align: center;
+  }
+
+  .footer-link,
+  .footer-link-static {
+    justify-content: center;
+    width: 100%;
+    font-size: 0.78rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.72rem;
+    line-height: 1.5;
+  }
+
+  .footer-copy {
+    font-size: 0.74rem;
   }
 }
+
