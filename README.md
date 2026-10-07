@@ -1,6 +1,6 @@
 # Realinov App
 
-Proyecto React + Vite creado automáticamente.
+Proyecto migrado a Next.js manteniendo el diseño y la experiencia visual original.
 
 ## Comandos
 
@@ -22,8 +22,8 @@ npm run dev
 npm run build
 ```
 
-- Vista previa de build:
+- Iniciar build de producción:
 
 ```
-npm run preview
+npm run start
 ```

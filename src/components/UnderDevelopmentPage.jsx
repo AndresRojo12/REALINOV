@@ -1,12 +1,17 @@
-import heroImage from '../images/rn.png';
-import brandIcon from '../images/rn (1).png';
 import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
+const heroImage = '/images/hero.png';
+const brandIcon = '/images/brand.png';
+
 const currentYear = new Date().getFullYear();
-const whatsappNumber = (import.meta.env.VITE_WHATSAPP || '3106059094').replace(/\D/g, '');
+const whatsappNumber = (
+  process.env.NEXT_PUBLIC_WHATSAPP ||
+  process.env.VITE_WHATSAPP ||
+  '3106059094'
+).replace(/\D/g, '');
 const whatsappLink = `https://wa.me/${whatsappNumber.startsWith('57') ? whatsappNumber : `57${whatsappNumber}`}?text=${encodeURIComponent('Hola REALINOV, quiero más información.')}`;
-const emailAddress = import.meta.env.VITE_EMAIL || 'realinovbussines@gmail.com';
-const companyAddress = import.meta.env.VITE_ADDRESS || 'Santa Rosa de Osos, Antioquia';
+const emailAddress = process.env.NEXT_PUBLIC_EMAIL || process.env.VITE_EMAIL || 'realinovbussines@gmail.com';
+const companyAddress = process.env.NEXT_PUBLIC_ADDRESS || process.env.VITE_ADDRESS || 'Santa Rosa de Osos, Antioquia';
 
 export default function UnderDevelopmentPage() {
   return (
