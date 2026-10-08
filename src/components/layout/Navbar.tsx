@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../../images/rn (1).png';
 
 const navigation = [
   { name: 'Soluciones', href: '#soluciones' },
@@ -45,9 +47,13 @@ export default function Navbar() {
             <div className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg">
               <div className="absolute inset-0 bg-gradient-to-br from-realinov-primary to-realinov-accent opacity-90" />
 
-              <span className="relative text-sm font-extrabold tracking-tight text-white">
-                RN
-              </span>
+              <Image
+                src={logo}
+                alt=""
+                width={36}
+                height={36}
+                className="relative z-10 h-9 w-9 object-cover"
+              />
             </div>
 
             <div className="hidden sm:block">
