@@ -9,6 +9,8 @@ import {
   Workflow,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import logo from '../../images/rn (1).png';
 
 const technologies = [
   { name: 'Software', icon: Code2 },
@@ -287,9 +289,13 @@ export default function Hero() {
                   shadow-realinov-primary/30
                 "
               >
-                <span className="text-4xl font-black tracking-tighter text-white">
-                  RN
-                </span>
+                <Image
+                  src={logo}
+                  alt="Logo REALINOV"
+                  fill
+                  sizes="128px"
+                  className="rounded-3xl object-cover object-[center_60%]"
+                />
               </div>
 
               {/* Orbit 1 */}
