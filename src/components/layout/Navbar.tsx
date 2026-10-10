@@ -11,6 +11,7 @@ const navigation = [
   { name: 'Sectores', href: '#sectores' },
   { name: 'Proceso', href: '#proceso' },
   { name: 'Proyectos', href: '#proyectos' },
+  { name: 'Tecnología', href: '#tecnologia' },
   { name: 'Nosotros', href: '#nosotros' },
 ];
 
